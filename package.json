@@ -1,0 +1,11 @@
+{
+  "name": "ordolux-kinde-auth",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "@kinde/infrastructure": "latest"
+  }
+}
