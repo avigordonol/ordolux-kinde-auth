@@ -9,6 +9,7 @@ export const DefaultLayout = (props: { children: React.ReactNode }) => {
       alignItems: "center",
       justifyContent: "center",
       padding: "24px",
+      background: "#0a0f1a",
     }}>
       <div style={{
         display: "flex",
@@ -31,30 +32,24 @@ export const DefaultLayout = (props: { children: React.ReactNode }) => {
           overflow: "hidden",
         }}>
           {/* Logo */}
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <div style={{
-              width: "42px", height: "42px",
-              background: "rgba(255,255,255,0.1)",
-              borderRadius: "10px",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              fontSize: "20px",
-            }}>⚖️</div>
-            <div>
-              <div style={{ fontSize: "21px", fontWeight: 700, color: "#fff", letterSpacing: "-0.3px" }}>OrdoLux</div>
-              <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.45)", textTransform: "uppercase", letterSpacing: "0.6px" }}>Legal Practice Management</div>
-            </div>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img
+              src="https://ordolux.co.uk/logo-white.png"
+              alt="OrdoLux"
+              style={{ height: "34px", width: "auto" }}
+            />
           </div>
 
           {/* Body */}
           <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", padding: "36px 0 16px" }}>
-            <h2 style={{ fontSize: "28px", fontWeight: 700, color: "#fff", lineHeight: 1.28, marginBottom: "14px" }}>
+            <h2 style={{ fontSize: "28px", fontWeight: 700, color: "#fff", lineHeight: 1.28, marginBottom: "14px", margin: "0 0 14px 0" }}>
               Practice smarter.<br />
               <span style={{ color: "#ff6a3d" }}>Never lose time.</span>
             </h2>
-            <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: 1.65, maxWidth: "270px" }}>
+            <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: 1.65, maxWidth: "270px", margin: "0 0 28px 0" }}>
               The complete practice management platform built for modern UK law firms.
             </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "28px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               {["Matter-centric time recording", "Integrated Microsoft 365", "Conveyancing & probate workflows", "HMRC SDLT recognised"].map((f) => (
                 <div key={f} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "13px", color: "rgba(255,255,255,0.6)" }}>
                   <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#ff6a3d", flexShrink: 0, display: "inline-block" }}></span>
@@ -77,13 +72,13 @@ export const DefaultLayout = (props: { children: React.ReactNode }) => {
           padding: "52px 44px",
           flexShrink: 0,
         }}>
-          <h1 style={{ fontSize: "22px", fontWeight: 700, color: "#0b1e3d", marginBottom: "6px" }}>Welcome back</h1>
-          <p style={{ fontSize: "14px", color: "#64748b", marginBottom: "32px", lineHeight: 1.55 }}>
-            Sign in using your organisation's Microsoft credentials.
+          <h1 style={{ fontSize: "22px", fontWeight: 700, color: "#0b1e3d", marginBottom: "6px", margin: "0 0 6px 0" }}>Welcome back</h1>
+          <p style={{ fontSize: "14px", color: "#64748b", marginBottom: "32px", lineHeight: 1.55, margin: "0 0 32px 0" }}>
+            Sign in using your organisation&apos;s Microsoft credentials.
           </p>
           {props.children}
           <div style={{ marginTop: "28px", fontSize: "11px", color: "#94a3b8", textAlign: "center", lineHeight: 1.6 }}>
-            By signing in you agree to OrdoLux's{" "}
+            By signing in you agree to OrdoLux&apos;s{" "}
             <a href="https://ordolux.co.uk/privacy" style={{ color: "#0b4d8c" }}>Privacy Policy</a>
             {" "}and{" "}
             <a href="https://ordolux.co.uk/terms" style={{ color: "#0b4d8c" }}>Terms of Service</a>.
