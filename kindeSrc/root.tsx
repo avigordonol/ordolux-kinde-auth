@@ -3,7 +3,6 @@ import {
   getKindeCSRF,
   getKindeRequiredCSS,
   getKindeRequiredJS,
-  getKindeRequiredMeta,
   type KindePageEvent,
 } from "@kinde/infrastructure";
 import React from "react";
@@ -23,7 +22,6 @@ export const Root = ({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{context.widget.content.page_title}</title>
-        {getKindeRequiredMeta()}
         {getKindeRequiredCSS()}
         {getKindeRequiredJS()}
         {getKindeCSRF()}
