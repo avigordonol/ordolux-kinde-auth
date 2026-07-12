@@ -50,7 +50,7 @@ export const DefaultLayout = (props: { children: React.ReactNode }) => {
               The complete practice management platform built for modern UK law firms.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              {["Matter-centric time recording", "Integrated Microsoft 365", "Conveyancing & probate workflows", "HMRC SDLT recognised"].map((f) => (
+              {["Everything in one place", "Built around your matters", "Time recording that works", "Trusted by UK law firms"].map((f) => (
                 <div key={f} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "13px", color: "rgba(255,255,255,0.6)" }}>
                   <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#ff6a3d", flexShrink: 0, display: "inline-block" }}></span>
                   {f}
@@ -88,3 +88,4 @@ export const DefaultLayout = (props: { children: React.ReactNode }) => {
     </div>
   );
 };
+
